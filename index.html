@@ -1,25 +1,17 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
 <head>
-<title>Hide scripts using comments.</title>
-<script language="javascript" type="text/javascript">
-function browserRedirect() {
-    var sUserAgent = navigator.userAgent.toLowerCase();
-    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-    var bIsAndroid = sUserAgent.match(/android/i) == "android";
-    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM){
-        location.href="www.ciciolab.com/";
-    }
-    location.href="www.ciciolab.com/";
-}
-browserRedirect();
-</script>
+<title>Work | Ciccio</title>
 </head>
+
 <body>
+<script language="javascript" type="text/javascript">   
+    // 以下方式直接跳转  
+    //飞鸟慕鱼博客
+    window.location.href = 'https://www.cicciolab.com/';
+</script>
 </body>
+
 </html>
