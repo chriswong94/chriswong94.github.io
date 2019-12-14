@@ -3,29 +3,24 @@
 
 <head>
 <title>Work | Ciccio</title>
+<script type="text/javascript">
+      //判断是否手机访问 如果是跳转 
+      try {
+      var urlhash = window.location.hash;
+      if (!urlhash.match("fromapp")) {
+      if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+      window.location = "/m/";
+      }
+      }
+      } catch (err) {}
+</script>
 </head>
 
 <body>
-<script type="text/javascript">  
-var userAgent = navigator.userAgent.toLowerCase();
-    var platform;
-    if(userAgent == null || userAgent == ''){
-        platform = 'WEB' ; 
-    }else{
-        if(userAgent.indexOf("android") != -1 ){ 
-            platform = 'ANDROID';
-            location.href = "http://m.cicciolab.com/";
-        }else if(userAgent.indexOf("ios") != -1 || userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1){ 
-            platform = 'IOS';
-            location.href = "http://m.cicciolab.com/";
-        }else if(userAgent.indexOf("windows phone") != -1 ){ 
-            platform = 'WP';
-            location.href = "http://m.cicciolab.com/";
-        }else{
-            platform = 'WEB' ;
-            location.href = "https://www.cicciolab.com/";
-        }
-    }
+<script language="javascript" type="text/javascript">   
+    // 以下方式直接跳转  
+    //飞鸟慕鱼博客
+    window.location.href = 'cicciolab.com/';
 </script>
 </body>
 
